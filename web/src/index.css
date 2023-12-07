@@ -15,6 +15,10 @@
  */
 
 @layer base {
+  main {
+    @apply z-10 relative mb-[350px] overflow-scroll
+  }
+
   label {
     @apply font-handwriting uppercase text-xl tracking-tighter
   }
