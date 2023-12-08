@@ -22,4 +22,16 @@ export default meta
 
 type Story = StoryObj<typeof Hamburger>
 
-export const Primary: Story = {}
+export const HamburgerShowing: Story = {
+  args: {
+    isHamburger: true,
+    toggleNav: () => {},
+  },
+}
+
+export const CloseShowing: Story = {
+  args: {
+    isHamburger: false,
+    toggleNav: () => {},
+  },
+}

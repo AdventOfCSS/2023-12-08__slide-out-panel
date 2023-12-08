@@ -1,12 +1,4 @@
-import { useState } from 'react'
-
-const Hamburger = () => {
-  const [isHamburger, setIsHamburger] = useState(true)
-
-  const toggleNav = () => {
-    setIsHamburger((prevValue) => !prevValue)
-  }
-
+const Hamburger = ({ isHamburger, toggleNav }) => {
   return (
     <button
       className="flex h-[58px] w-[68px] flex-col items-center justify-center bg-supernova"
